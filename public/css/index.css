@@ -1,0 +1,324 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins/Poppins-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins/Poppins-Bold.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins/Poppins-Light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/Roboto_Mono/static/RobotoMono-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/Roboto_Mono/static/RobotoMono-Bold.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/Roboto_Mono/static/RobotoMono-Light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --red: #dc143c;
+  --blue: #54a7ef;
+  --green: #51ef6b;
+  --dark: #212529;
+  --palette1: #191919;
+  --palette2: #750E21;
+  --palette3: #E3651D;
+  --palette4: #BED754;
+  --palette5: #363636;
+  --warning: #f7ca05;
+  --grey: #dcdcdc;
+  --textDark: #212529;
+  --textGrey: #9b9b9b;
+  --pendiente: #50C878;
+  --proceso: #a576ff;
+  --pausado: #ff6767;
+  --terminado: #00b8ff;
+  font-size: 16px;
+}
+
+.ql-toolbar {
+  width: 100%;
+}
+
+.ql-container {
+  min-width: 100% !important;
+  width: 100% !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.ql-editor {
+  min-width: 100% !important;
+  width: 100% !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 4 px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--palette3);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--palette3);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--palette3);
+}
+
+
+/* Estilos para teléfonos móviles pequeños (portrait) */
+@media screen and (max-width: 575px) {
+  :root {
+    font-size: 12px !important;
+  }
+}
+
+/* Estilos para teléfonos móviles pequeños (landscape) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  :root {
+    font-size: 12px !important;
+  }
+}
+
+/* Estilos para tabletas pequeñas (portrait) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  :root {
+    font-size: 12px !important;
+  }
+}
+
+/* Estilos para tabletas pequeñas (landscape) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  :root {
+    font-size: 18px !important;
+  }
+}
+
+/* Estilos para pantallas extra grandes */
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 18px !important;
+  }
+}
